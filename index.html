@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Upload and Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Sticker Upload and Gallery</h1>
+        
+        <!-- Upload Sticker Form -->
+        <div class="upload-form">
+            <h2>Upload a Sticker</h2>
+            <input type="file" id="stickerFile" accept="image/*">
+            <button id="uploadBtn">Upload Sticker</button>
+        </div>
+
+        <!-- Sticker Gallery -->
+        <h2>Sticker Gallery</h2>
+        <div class="sticker-gallery" id="sticker-gallery">
+            <!-- Uploaded stickers will appear here -->
+        </div>
+
+        <!-- Download All Stickers Button -->
+        <button id="downloadBtn">Download All Stickers</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

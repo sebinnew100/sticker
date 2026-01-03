@@ -1,0 +1,66 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the entire page */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Upload form styling */
+.upload-form {
+    margin-bottom: 20px;
+}
+
+/* Sticker gallery styling */
+#sticker-gallery {
+    display: flex;               /* Use flexbox for layout */
+    flex-wrap: wrap;             /* Allow stickers to wrap to the next line */
+    justify-content: center;     /* Center stickers horizontally */
+    gap: 10px;                   /* Add space between stickers */
+    margin-top: 20px;            /* Add margin at the top */
+    min-height: 100px;           /* Ensure the gallery has a minimum height */
+    padding: 10px;               /* Padding inside the gallery */
+    border: 1px solid #ddd;     /* Border around the gallery for visibility */
+}
+
+/* Individual sticker container */
+.sticker {
+    width: 100px;                /* Set width for each sticker */
+    height: 100px;               /* Set height for each sticker */
+    border-radius: 10px;         /* Rounded corners for the stickers */
+    border: 2px solid #ddd;     /* Border color */
+    overflow: hidden;            /* Crop the image if it overflows */
+    display: inline-block;       /* Align stickers in rows */
+    text-align: center;          /* Center content inside the sticker div */
+    margin: 10px;                /* Add space around each sticker */
+}
+
+/* Image styling inside each sticker */
+.sticker img {
+    width: 100%;                 /* Make the image fill the entire container */
+    height: 100%;                /* Make the image fill the entire container */
+    object-fit: cover;           /* Ensure the image covers the space without distortion */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;   /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;          /* Rounded corners */
+    margin-top: 10px;            /* Add space above the button */
+}
+
+button:hover {
+    background-color: #45a049;   /* Darker green on hover */
+}
