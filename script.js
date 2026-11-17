@@ -50,6 +50,8 @@ uploadButton.addEventListener('click', function() {
         stickerGallery.appendChild(stickerDiv);
 
         console.log("Sticker added to gallery.");  // Log when the sticker is added
+
+        trackAdsConversion('upload');
     };
 
     reader.readAsDataURL(file);  // Read the file as a Data URL (base64 string)
@@ -105,6 +107,7 @@ downloadButton.addEventListener('click', function() {
                             link.href = URL.createObjectURL(content);
                             link.download = 'stickers.zip';
                             link.click();
+                            trackAdsConversion('download', { value: stickers.length });
                         });
                 }
             });
